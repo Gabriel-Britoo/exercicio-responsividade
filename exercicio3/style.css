@@ -1,0 +1,78 @@
+/* Gabriel Reis de Brito */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(99, 149, 187, 1);
+    color:white;
+    padding: 10px;
+    text-align: center;
+}
+
+#container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 55px;
+}
+#navEsquerda{
+    margin-left: 40vh;
+    display: flex;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+nav ul li {
+    padding: 16px;
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
+    text-transform: uppercase;
+    margin: 0 3vh;
+}
+
+a{
+    transition: color 0.3s;
+}
+
+a:hover{
+    color:rgb(185, 185, 185);
+}
+
+#login {
+    margin-left: 30vh;
+}
+
+@media (max-width: 600px){
+    #navEsquerda{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    #login{
+        margin-left: 2vh;
+    }
+}
