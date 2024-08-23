@@ -1,1 +1,19 @@
 /* Gabriel Reis de Brito */
+#left{
+    width: 20%;
+    background-color: dodgerblue;
+}
+#main{
+    width: 60%;
+    background-color: yellow;
+}
+#right{
+    width: 20%;
+    background-color: red;
+}
+
+@media (max-width: 800px){
+    #left, #main, #right{
+        width: 100%;
+    }
+}
